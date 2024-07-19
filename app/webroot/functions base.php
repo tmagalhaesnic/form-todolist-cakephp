@@ -1,5 +1,4 @@
 <?php
-//renomear arquivo para "functions.php"
 function connect_to_database() {
     $host = 'localhost';
     $user = '';
@@ -45,4 +44,17 @@ function delete_item($id) {
     $query = "DELETE FROM items WHERE id=$id";
     $conn->query($query);
 }
+
+function concluded_item($id) {
+    $conn = connect_to_database();
+    $concluded = 'concluido';
+    $query = "UPDATE items SET concluded = ? WHERE id = ?";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("si", $concluded, $id);
+    $stmt->execute();
+    $stmt->close();
+    $conn->close();
+
+}
+
 ?>

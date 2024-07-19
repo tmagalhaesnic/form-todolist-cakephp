@@ -8,9 +8,10 @@
 </head>
 <body>
     <h1>To-Do List</h1>
-
-    <a href="/create">Create New Item</a>
-
+    <li>
+        <a href="/create">Create New Item</a>
+        <a href='read?id=$item[id]'>Read</a>
+    </li>
     <ul>
         <?php
         $items = get_all_items();
@@ -20,7 +21,7 @@
             echo "<p>$item[description]</p>";
             echo "<a href='update?id=$item[id]'>Update</a>";
             echo "<a href='delete?id=$item[id]'>Delete</a>";
-            echo "<a href='read?id=$item[id]'>Read</a>";
+            echo "<a href='done?id=$item[id]'>Done</a>";
             echo "</li>";
         }
         ?>

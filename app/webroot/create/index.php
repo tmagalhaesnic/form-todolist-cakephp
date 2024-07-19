@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Create New Item</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="app/style.css">
 </head>
 <body>
     <h1>Create New Item</h1>

@@ -16,6 +16,7 @@
             echo "<li>";
             echo "<h2>$item[name]</h2>";
             echo "<p>$item[description]</p>";
+            echo "<p>$item[concluded]</p>";
             echo "</li>";
         }
         ?>
