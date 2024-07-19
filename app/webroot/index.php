@@ -17,8 +17,8 @@
         $items = get_all_items();
         foreach ($items as $item) {
             echo "<li>";
-            echo "<h2>$item[name]</h2>";
-            echo "<p>$item[description]</p>";
+            echo "<h2>$item[name]"," - ","$item[concluded]</h2>";
+            echo "<p>$item[description]</p>"; 
             echo "<a href='update?id=$item[id]'>Update</a>";
             echo "<a href='delete?id=$item[id]'>Delete</a>";
             echo "<a href='done?id=$item[id]'>Done</a>";
