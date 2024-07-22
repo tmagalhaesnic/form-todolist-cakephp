@@ -17,7 +17,7 @@
 $items = get_all_items();
 foreach ($items as $item) {
     echo "<li>";
-    echo "<h2>$item[name] - $item[concluded]</h2>";
+    echo "<h2>$item[name] - <span class='concluded'>$item[concluded]</span></h2>";
 
     $priority_class = '';
     switch ($item['priority']) {
@@ -35,13 +35,15 @@ foreach ($items as $item) {
             break;
     }
 
+    $concluded_class = $item['concluded'];
+
     echo "<h2 class='$priority_class'>$item[priority]</h2>";
 
     echo "<p>$item[description]</p>";
     echo "<div class='actions'>";
     echo "<a href='update?id=$item[id]'>Update</a>";
     echo "<a href='delete?id=$item[id]'>Delete</a>";
-    echo "<a href='done?id=$item[id]'>Done</a>";
+    echo "<a class=href='done?id=$item[id]'>Done</a>";
     echo "</div>";
     echo "</li>";
 }

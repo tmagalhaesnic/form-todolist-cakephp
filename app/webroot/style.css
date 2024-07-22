@@ -30,6 +30,7 @@ h1 {
 .todo-list {
   list-style-type: none;
   padding: 0;
+  
 }
 
 .todo-list li {
@@ -44,6 +45,7 @@ h1 {
 .todo-list li h2 {
   margin-bottom: 10px;
   font-size: 18px;
+  
 }
 
 .todo-list li p {
@@ -286,4 +288,10 @@ form input[type="submit"]:hover {
 
 .priority-urgente {
   color: #FF0000; /* vermelho */
+}
+
+.concluded {
+  color: green; /* Cor verde para o texto */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 5px; /* Margem inferior para separar dos outros elementos */
 }
