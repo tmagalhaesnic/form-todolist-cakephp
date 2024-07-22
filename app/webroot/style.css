@@ -213,3 +213,77 @@ form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+
+
+.create-item {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.create-item a {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.create-item a:hover {
+  background-color: #45a049;
+}
+
+.todo-list-read {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  
+}
+
+.todo-list-read li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.todo-list-read li h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.todo-list-read li p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.todo-list-read a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.todo-list-read a:hover {
+  background-color: #45a049;
+}
+
+
+.priority-leve {
+  color: #069406; /* verde */
+}
+
+.priority-normal {
+  color: #FFA500; /* laranja */
+}
+
+.priority-urgente {
+  color: #FF0000; /* vermelho */
+}

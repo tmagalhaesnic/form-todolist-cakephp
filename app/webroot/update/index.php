@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Update Item</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Create New Item</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
     <h1>Update Item</h1>
@@ -16,7 +16,7 @@
     $item = $result->fetch_assoc();
     ?>
 
-    <form action="" method="post">
+    <form class = "form-create" action="" method="post">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" value="<?php echo $item['name']; ?>">
 
@@ -30,6 +30,7 @@
 
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <input type="submit" value="Update">
+        <a href="../" class="cancel-button">Cancel</a>
     </form>
 
     <?php
