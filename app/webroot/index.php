@@ -43,7 +43,7 @@ foreach ($items as $item) {
     echo "<div class='actions'>";
     echo "<a href='update?id=$item[id]'>Update</a>";
     echo "<a href='delete?id=$item[id]'>Delete</a>";
-    echo "<a class=href='done?id=$item[id]'>Done</a>";
+    echo "<a href='done?id=$item[id]'>Done</a>";
     echo "</div>";
     echo "</li>";
 }
