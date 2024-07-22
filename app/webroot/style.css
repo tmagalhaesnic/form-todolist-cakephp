@@ -1,234 +1,215 @@
-/* Reset de estilos básicos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilo para o corpo da página */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   padding: 20px;
 }
 
-/* Estilo para o cabeçalho */
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
 }
 
-/* Estilo para o formulário de criação de item */
 .create-item {
+  text-align: right;
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .create-item a {
-  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
   padding: 10px 20px;
-  background-color: #007bff; /* Azul padrão do Bootstrap */
-  color: #fff;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  margin-left: 10px;
+  border-radius: 4px;
 }
 
 .create-item a:hover {
-  background-color: #0056b3; /* Azul escuro */
+  background-color: #45a049;
 }
 
-/* Estilo para a lista de itens */
 .todo-list {
   list-style-type: none;
   padding: 0;
 }
 
-/* Estilo para cada item da lista */
 .todo-list li {
   background-color: #fff;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  position: relative; /* Adicionado para posicionar elementos filhos */
 }
 
-/* Estilo para os botões de ação */
+.todo-list li h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.todo-list li p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
 .actions {
   position: absolute;
-  top: 15px;
+  top: 50%;
   right: 15px;
+  transform: translateY(-50%);
 }
 
 .actions a {
+  background-color: #ccc;
+  color: #333;
+  padding: 8px 12px;
   text-decoration: none;
-  margin-right: 10px;
-  padding: 5px 10px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
+  border-radius: 4px;
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* Cor cinza do Bootstrap */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin-left: 10px; /* Espaçamento à esquerda para separar dos outros botões */
+  margin-right: 5px;
 }
 
 .actions a:hover {
-  background-color: #0056b3; /* Azul padrão do Bootstrap */
-  color: #fff;
+  background-color: #bbb;
 }
 
-/* Estilo para o título do item */
-.todo-list li h2 {
+
+.form-create label {
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  color: #333; /* Define a cor do texto */
+  display: block; /* Faz o label ocupar toda a largura disponível */
+  margin-bottom: 8px; /* Adiciona margem inferior para separar dos elementos abaixo */
+}
+
+select {
+  width: 200px; /* largura do select */
+  padding: 5px; /* espaçamento interno */
+  font-size: 16px; /* tamanho da fonte */
+  border: 1px solid #ccc; /* borda */
+  border-radius: 4px; /* borda arredondada */
+}
+
+option {
+  padding: 10px; /* espaçamento interno das opções */
+  font-size: 14px; /* tamanho da fonte das opções */
+  background-color: #f0f0f0; /* cor de fundo das opções */
+  color: #333; /* cor do texto das opções */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.form-create {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto;
+}
+
+.form-create label {
+  display: block;
+  font-weight: bold;
   margin-bottom: 10px;
+}
+
+.form-create input[type="text"],
+.form-create textarea,
+.form-create select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box; /* Para incluir padding e border no width */
+}
+
+.form-create input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-create input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  background-color: #ccc;
   color: #333;
-  font-size: 18px;
-  
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 10px;
 }
 
-/* Estilo para o parágrafo de descrição */
-.todo-list li p {
-  color: #666;
-  margin-bottom: 10px;
-  
+.cancel-button:hover {
+  background-color: #bbb;
 }
 
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Estilo para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     padding: 20px;
 }
 
-/* Estilo para o cabeçalho */
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #333;
 }
 
-/* Estilo para o formulário */
 form {
-    max-width: 600px;
-    margin: 0 auto;
     background-color: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-/* Estilo para rótulos e campos de entrada */
-label {
+form label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
 }
 
-input[type="text"],
-textarea {
+form input[type="text"],
+form textarea,
+form select {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-textarea {
-    height: 150px;
+form select {
+    margin-top: 5px;
 }
 
-input[type="submit"] {
-    background-color: #007bff; /* Azul padrão do Bootstrap */
-    color: #fff;
-    border: none;
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
-    background-color: #0056b3; /* Azul escuro */
-    
+form input[type="submit"]:hover {
+    background-color: #45a049;
 }
 
-/* Estilo para o botão de cancelamento */
-.cancel-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* Cor cinza do Bootstrap */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-  margin-left: 10px; /* Espaçamento à esquerda para separar dos outros botões */
-}
-
-.cancel-button:hover {
-  background-color: #0056b3; /* Cor cinza escura do Bootstrap */
-}
-
-.todo-list-read li {
-  background-color: #fff;
-  margin-bottom: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-left: 0px;
-
-}
-
-.todo-list-read {
-  list-style-type: none;
-  padding: 0;
-  margin-bottom: 10px;
-  color: #333;
-  font-size: 18px;
-  
-}
-
-.view-item {
-  margin-bottom: 20px;
- 
-}
-
-.view-item a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* Azul padrão do Bootstrap */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.view-item a:hover {
-  background-color: #0056b3; /* Azul escuro */
-}
-
-.todo-list-read li h2 {
-  margin-bottom: 10px;
-  color: #333;
-  font-size: 18px;
-  
-}
-
-.todo-list-read li p {
-  color: #666;
-  margin-bottom: 10px;
-  
-}

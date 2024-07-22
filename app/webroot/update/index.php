@@ -23,6 +23,11 @@
         <label for="description">Description:</label>
         <textarea name="description" id="description"><?php echo $item['description']; ?></textarea>
 
+        <select id="priority" name="priority"><?php echo $item['priority'];?>"
+        <option value="Leve">Leve</option>
+        <option value="Normal">Normal</option>
+        <option value="Urgente">Urgente</option>
+
         <input type="hidden" name="id" value="<?php echo $id; ?>">
         <input type="submit" value="Update">
     </form>
@@ -31,8 +36,9 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         $description = $_POST['description'];
+        $priority = $_POST['priority'];
         $id = $_POST['id'];
-        update_item($id, $name, $description);
+        update_item($id, $name, $description, $priority);
         header('Location: /');
         exit;
     }

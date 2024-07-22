@@ -5,5 +5,5 @@ CREATE TABLE items (
     name VARCHAR(255) NOT NULL,
     description TEXT,
     concluded VARCHAR(255),
-    priority INT(3)
+    priority VARCHAR(255)
 );

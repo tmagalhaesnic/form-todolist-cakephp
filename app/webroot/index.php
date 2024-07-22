@@ -18,6 +18,7 @@
         foreach ($items as $item) {
             echo "<li>";
             echo "<h2>$item[name] - $item[concluded]</h2>";
+            echo "<h2>$item[priority]</h2>"; 
             echo "<p>$item[description]</p>"; 
             echo "<div class='actions'>";
             echo "<a href='update?id=$item[id]'>Update</a>";

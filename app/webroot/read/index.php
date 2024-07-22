@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 <body>
-<div class="view-item">
+<div class="todo-list">
     <h1>To-Do List Items</h1>
-    <ul class="todo-list-read">
+    <ul class = "form-create">
         <?php
         $items = get_all_items();
         foreach ($items as $item) {
