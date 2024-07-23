@@ -32,8 +32,9 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $name = $_POST['name'];
         $description = $_POST['description'];
+        $concluded = $_POST['concluded'];
         $priority = $_POST['priority'];
-        create_item($name, $description, $priority);
+        create_item($name, $description, $concluded, $priority);
         header('Location: /');
         exit;
     }
