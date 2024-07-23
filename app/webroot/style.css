@@ -9,8 +9,12 @@ h1 {
   font-size: 2.5em;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.534);
+  text-shadow:0 4px 1px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
+}
+
+h1:hover {
+  text-shadow: 0 5cap 10px rgba(0, 0, 0, 0.2);
 }
 
 .create-item {
@@ -33,18 +37,23 @@ h1 {
 
 .todo-list {
   list-style-type: none;
-  padding: 0;
-  
+  padding: 0;  
 }
 
 .todo-list li {
-  background-color: #fff;
+  background-color: #dfdfdf;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  position: relative; /* Adicionado para posicionar elementos filhos */
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s ease;
 }
+
+.todo-list li:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 
 .todo-list li h2 {
   margin-bottom: 10px;
@@ -55,7 +64,7 @@ h1 {
 .todo-list li p {
   margin-bottom: 10px;
   font-size: 16px;
-  color: #555;
+  color: #252525;
 }
 
 .actions {
@@ -81,25 +90,25 @@ h1 {
 
 
 .form-create label {
-  font-weight: bold; /* Define o peso da fonte como negrito */
-  color: #333; /* Define a cor do texto */
-  display: block; /* Faz o label ocupar toda a largura disponível */
-  margin-bottom: 8px; /* Adiciona margem inferior para separar dos elementos abaixo */
+  font-weight: bold; 
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
 }
 
 select {
-  width: 200px; /* largura do select */
-  padding: 5px; /* espaçamento interno */
-  font-size: 16px; /* tamanho da fonte */
-  border: 1px solid #ccc; /* borda */
-  border-radius: 4px; /* borda arredondada */
+  width: 200px; 
+  padding: 5px; 
+  font-size: 16px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
 }
 
 option {
-  padding: 10px; /* espaçamento interno das opções */
-  font-size: 14px; /* tamanho da fonte das opções */
-  background-color: #f0f0f0; /* cor de fundo das opções */
-  color: #333; /* cor do texto das opções */
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f0f0f0; 
+  color: #333; 
 }
 
 body {
@@ -132,7 +141,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  box-sizing: border-box; /* Para incluir padding e border no width */
+  box-sizing: border-box;
 }
 
 .form-create input[type="submit"] {
@@ -283,21 +292,21 @@ form input[type="submit"]:hover {
 
 
 .priority-leve {
-  color: #069406; /* verde */
+  color: #069406;
 }
 
 .priority-normal {
-  color: #FFA500; /* laranja */
+  color: #FFA500;
 }
 
 .priority-urgente {
-  color: #FF0000; /* vermelho */
+  color: #FF0000;
 }
 
 .concluded {
-  color: green; /* Cor verde para o texto */
-  font-weight: bold; /* Texto em negrito */
-  margin-bottom: 5px; /* Margem inferior para separar dos outros elementos */
+  color: green;
+  font-weight: bold; 
+  margin-bottom: 5px;
 }
 
 .pendente {
@@ -306,4 +315,5 @@ form input[type="submit"]:hover {
 
 .concluido {
   color: green;
+  
 }
