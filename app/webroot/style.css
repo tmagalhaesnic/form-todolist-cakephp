@@ -13,10 +13,6 @@ h1 {
   padding: 10px 0;
 }
 
-h1:hover {
-  text-shadow: 0 5cap 10px rgba(0, 0, 0, 0.2);
-}
-
 .create-item {
   text-align: right;
   margin-bottom: 20px;
