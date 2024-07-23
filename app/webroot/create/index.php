@@ -7,7 +7,7 @@
 </head>
 <body>
 
-    <h1>Create New Item</h1>
+    <h1>New Item</h1>
 
     <form class = "form-create"action="/create/" method="post">
         <label for="name">Name:</label>
