@@ -27,15 +27,15 @@ function get_all_items() {
     return $items;
 }
 
-function create_item($name, $description) {
+function create_item($name, $description, $concluded, $priority) {
     $conn = connect_to_database();
-    $query = "INSERT INTO items (name, description) VALUES ('$name', '$description')";
+    $query = "INSERT INTO items (name, description, concluded, priority) VALUES ('$name', '$description', 'pendente', '$priority')";
     $conn->query($query);
 }
 
-function update_item($id, $name, $description) {
+function update_item($id, $name, $description, $priority) {
     $conn = connect_to_database();
-    $query = "UPDATE items SET name='$name', description='$description' WHERE id=$id";
+    $query = "UPDATE items SET name='$name', description='$description', priority='$priority' WHERE id=$id";
     $conn->query($query);
 }
 
@@ -54,7 +54,6 @@ function concluded_item($id) {
     $stmt->execute();
     $stmt->close();
     $conn->close();
-
 }
 
 ?>
