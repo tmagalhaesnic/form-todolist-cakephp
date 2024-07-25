@@ -46,7 +46,6 @@
                         break;
                 }
 
-
                 echo "<h2 class='$priority_class'>$item[priority]</h2>";
                 echo "<p>$item[description]</p>";
                 echo "<div class='actions'>";
