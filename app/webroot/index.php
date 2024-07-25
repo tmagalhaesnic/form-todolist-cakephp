@@ -18,7 +18,6 @@
         foreach ($items as $item) {
             echo "<li>";
 
-
                 $concluded_class = '';
                 switch ($item['concluded']) {
                     case 'pendente':
@@ -49,7 +48,6 @@
 
 
                 echo "<h2 class='$priority_class'>$item[priority]</h2>";
-
                 echo "<p>$item[description]</p>";
                 echo "<div class='actions'>";
                     echo "<a href='update?id=$item[id]'>Update</a>";

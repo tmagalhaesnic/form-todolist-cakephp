@@ -13,24 +13,6 @@ h1 {
   padding: 10px 0;
 }
 
-.create-item {
-  text-align: right;
-  margin-bottom: 20px;
-}
-
-.create-item a {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin-left: 10px;
-  border-radius: 4px;
-}
-
-.create-item a:hover {
-  background-color: #45a049;
-}
-
 .todo-list {
   list-style-type: none;
   padding: 0;  
@@ -53,7 +35,6 @@ h1 {
 .todo-list li h2 {
   margin-bottom: 10px;
   font-size: 18px;
-  
 }
 
 .todo-list li p {
@@ -103,12 +84,6 @@ option {
   font-size: 14px;
   background-color: #f0f0f0; 
   color: #333; 
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  padding: 20px;
 }
 
 .form-create {
@@ -245,15 +220,20 @@ form input[type="submit"]:hover {
   padding: 0;
   max-width: 600px;
   margin: 0 auto;
-  
 }
 
 .todo-list-read li {
-  background-color: #fff;
+  background-color: #dfdfdf;
   margin-bottom: 15px;
   padding: 15px;
   border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+.todo-list-read li:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .todo-list-read li h2 {
@@ -264,7 +244,7 @@ form input[type="submit"]:hover {
 .todo-list-read li p {
   margin-bottom: 10px;
   font-size: 16px;
-  color: #555;
+  color: #252525;
 }
 
 .todo-list-read a {
@@ -300,5 +280,4 @@ form input[type="submit"]:hover {
 
 .concluido {
   color: green;
-  
 }

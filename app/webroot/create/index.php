@@ -24,8 +24,6 @@
 
         <input type="submit" value="Create">
         <a href="../" class="cancel-button">Cancel</a>
-
-        
     </form>
 
     <?php
